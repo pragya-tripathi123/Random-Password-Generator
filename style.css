@@ -45,7 +45,18 @@ h1{
 .gen{
     height: 40px;
     background-color: yellow;
-    min-width: 400px;
+    min-width: 170px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#reset{
+    height: 40px;
+    background-color: yellow;
+    min-width: 170px;
     border: 0;
     border-radius: 8px;
     cursor: pointer;

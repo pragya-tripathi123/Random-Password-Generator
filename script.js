@@ -32,6 +32,10 @@ const generatePassword = (password = "") =>{
         return generatePassword(password)
     }
     passbox.innerText = (truncatestring(password,range.value));
+    document.getElementById("reset").addEventListener("click", () =>{
+        passbox.innerText = "Your password"
+
+    } )
 }
 // generatePassword();
 document.getElementById("btn").addEventListener("click", 
@@ -44,9 +48,9 @@ generatePassword();
 function truncatestring(str,num){
     if(str.length > num){
         let substr = str.substring(0,num)
-        return substr
+        return substr;
     }
     else{
-        return str
+        return str;
     }
 }
